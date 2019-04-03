@@ -32,5 +32,5 @@ This project is licensed under the MIT License
 
 * [.gitignore](https://github.com/thomasrussellmurphy/quartus-DE1_SOC-project/blob/master/.gitignore) for Verilog projects 
 * [README.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for formatting README
-* [Why did the Chicken Cross the Road](https://github.com/hughdingb58/b58project). Project inspiration
+* [Why did the Chicken Cross the Road](https://github.com/hughdingb58/b58project) - project inspiration
 
