@@ -1,0 +1,130 @@
+CSCB58 Project Report: Winter 2019
+
+Team Member A
+-------------
+First Name: Ajay
+Last Name: Rajendran
+Student Number: 1002437259
+UofT E-mail Address: ajay.rajendran@mail.utoronto.ca
+
+
+Team Member B
+-------------
+First Name: Vincent
+Last Name: Teng
+Student Number: 1002290870
+UofT E-mail Address: v.teng@mail.utoronto.ca
+
+Team Member C
+-------------
+First Name: Jadin
+Last Name: Luong
+Student Number: 1001689238
+UofT E-mail Address: jadin.luong@mail.utoronto.ca
+
+
+Project Plan
+--------
+
+Project Title:
+
+Block Escape
+
+Provide a one paragraph description of your project:
+
+This idea is inspired by an online flash game called "worlds hardest game". The objective is to move your square from the starting point to the finish point by avoiding moving enemies that are in your way.
+The player controls the square, and the enemies will also be squares that are either moving vertically or horizontally. There will be large rectangles that will act as walls which will provide a path the
+user has to take to reach the end. The player has to avoid all the enemies and reach the end in order to win, and if they are hit by one of the enemies, they restart at the beginning, and a death counter
+which will be displayed on the hex will increase by one.
+
+What is your plan for the first week?
+
+Plan for the first week is to create the player and the enemy squares. Have the player square respond to the keys (key 3 and 2 - vertical, key 1 and 0 - horizontal) and have some enemies move horizontally
+and others vertically. There are some previous projects such as T+V pong, Cave catchers and why did the chicken cross the road, that have similar movements that we can incorporate into our project.
+
+What is your plan for the second week?
+
+Plan for the second week is to create the static walls using large rectangles, and have the player square and the enemy square interact with them. The player should not be able to move past the blocks
+and the enemies should change directions when it hits the walls. Some concepts in brick breaker may help us in implementing the interaction portion of the walls. Also use the same interaction mechanism
+for the players and the enemies.
+
+What is your plan for the third week?
+
+At this stage we should be incorporating the last parts of the game mechanics. Reset the game when the player hits the enemies, and increment the death counter by one. Implement the finish line and have
+the game conclude when the player reaches the finish line. If there is some time left then we can use that to tweak some colors for the walls, player, and enemies to look more presentable.
+
+
+What is your backup plan if things don’t work out as planned?
+
+There are some worst-case scenarios to consider:
+1) We are not able to have the user move in all four directions using the keys
+2) The walls do not work as intended
+3) We were not able to have the enemies change directions
+
+case 1 - If we cannot make the user move in all 4 directions, we can have him move only horizontally, and change the overall layout of the game design to match that
+case 2 - If the walls are not working, we can go with the given boundaries of the screen, but increase the speed of the enemies so the game does not become too easy
+case 3 - if we can not change directions, then we can have them reset back to their initial location and go in the direction that it does move in
+
+If by the end of each week, we do not hit the intended goal, then we can assume that we in one of these worst case scenarios. If that is the case we will implement
+these backup plans and continue forward and keep on track with the overall schedule of the three weeks. Week 3 does not have as much as the other 2 weeks because in
+case we do get some extra time then, we can see if we can fix the problems we faced in the first 2 weeks. Even if we could not fix the issues, we will have a working
+project to deliver by the due date.
+
+Weekly Reports
+--------------
+<In this space, provide a report each week of what worked and what didn't, and what (if any) changes were made to your proposal)>
+
+Week 1:
+
+Created a 1 pixel player that moves using the keys on the DE2 board and have enemies that are able to move vertically and horizontally, but were not able to have them change directions at the end of the screen. The interactions between the player and enemy works as intended
+
+Week 2:
+
+Created a path for the player to take and made the exterior background white for contrast. Updated enemies to move either vertically or horizontally. Enemies can also now move for a predefined distance and change direction when they reach the end. Collision also works properly between the player and the enemies/wall.
+
+Week 3:
+
+Added a death counter which tracks the number of times the player has been reset back to the beginning. updated enemy movements to fit within the generated path. Wall has been updated so when the player hits the wall, they re-spawn back at the beginning and the death counter on the HEX increases by 1. When the player reaches the end, they get reset back to the beginning and the high score (lowest number of deaths) gets updated on the HEX display.
+
+References
+----------
+<In this space clearly indicate all external sources used in this project. If you used anyone else's code (from previous B58 projects or other sources) clearly indicate what you used and where you found it. Usage of any material not credited in this space will be considered plagiarism. It is absolutely OK and expected to update this section as you progress in the projected.
+
+Make sure to document what you added on top of the existing work, especially if you work with a previous project. What is it that YOU added?>
+
+**Some previous B58 games we plan to use as reference for our project:**
+- T+V pong
+- Cave catchers
+- Why Did The Chicken Cross The Road
+- Brick Breaker
+
+
+**Programs that we actually used as reference:**
+- We Used Why Did The Chicken Cross the Road as a reference to understand how certain items, such as player and enemy movements were executed, but after starting to work on our own project, we created our own design and code to
+  execute the movements. Overall, the code design for our game was not build upon the code from this game, but we used it as inspiration on where to get started.
+
+- We Used the gitignore file from quartus-DE1_SOC-project by Thomas Murphy to create our own .gitignore file. We did not use anything else from this project for ours.
+
+- We used README_-Template.md from PurpleBooth to get a good readable design template for the readme in our project.
+
+- Why Did The Chicken Cross The Road
+    - Creators: Jerryy Lui and Hugh Ding
+    - Source: https://github.com/hughdingb58/b58project
+    - Time Published: March 31st 2017
+
+- quartus-DE1_SOC-project
+    - Creator: Thomas Russell Murphy
+    - Source: https://github.com/thomasrussellmurphy/quartus-DE1_SOC-project/blob/master/.gitignore
+    - Time Published: August 20th 2015
+
+-  README-Template.md
+    - Creator: PurpleBooth
+    - Source: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+    - Time Published: July 21st 2015
+
+Repo & Video
+------------
+<At the end of the project, provide links to your code repository and presentation video (and passwords if not public>
+
+Repo for our Project: https://github.com/vincentt117/BrickEscape-CSCB58
+Video for our Project: https://www.youtube.com/watch?v=KijKjpqOpZI&feature=youtu.be
